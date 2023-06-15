@@ -1,5 +1,3 @@
-export default function Trading () {
-  return (
-    <h1>Tradding</h1>
-  )
+export default function Trading() {
+	return <h1>Tradding</h1>;
 }
