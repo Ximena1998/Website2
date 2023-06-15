@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { useState } from 'react'
+
 // links: arreglo de rutas para el nav
 const links = [{
   label: 'Home',
@@ -26,13 +27,13 @@ const links = [{
 ]
 export function Navigation () {
   const [navbar, setNavbar] = useState(false)
+  
   function handleNav () {
-    console.log('click')
     setNavbar(!navbar)
   }
-  console.log('click')
+
   return (
-    <div onClick={() => { console.log('inicio') }}>
+    <div>
       <nav className='w-full bg-black top-0 left-0 right-0'>
         <div className='justify-between px-4 lg:max-w-7xl md:items-center md:flex md:px-8'>
           <div>
@@ -49,13 +50,16 @@ export function Navigation () {
                       <Image src='/close.svg' width={30} height={30} alt='logo' />
                       )
                     : (
+                      
                       <Image
                         src='/hamburger.svg'
                         width={30}
                         height={30}
                         alt='logo'
                         className='focus:border-none active:border-none'
-                      />)}
+                      />
+                      
+                      )}
                 </button>
               </div>
             </div>

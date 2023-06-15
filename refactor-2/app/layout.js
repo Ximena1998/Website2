@@ -1,10 +1,14 @@
 import '../styles/globals.css'
-import { Navigation } from '../components/navigation'
+import { Navigation } from '../components/Navigation'
 export default function RootLayout ({ children }) {
   return (
     <html>
-      <Navigation />
-      {children}
+      <body>
+        <Navigation />
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
