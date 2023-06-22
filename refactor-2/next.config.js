@@ -1,10 +1,20 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true
-  },
-  // declaracion para utilizar el nuevo enrutador de nextjs
-  reactStrictMode: true
-}
+const { ProvidePlugin } = require('webpack');
 
-module.exports = nextConfig
+module.exports = {
+  experimental: {
+    appDir: true,
+  },
+  reactStrictMode: true,
+  webpack: (config) => {
+    config.plugins.push(
+      new ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+      })
+    );
+
+    return config;
+  },
+};
+

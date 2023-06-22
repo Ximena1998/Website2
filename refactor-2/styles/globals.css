@@ -1,12 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.bg-black{
+.bg-black {
     background-color: #111111;
 }
-body{
+.bg-secondary {
+    background-color: #161616;
+}
+body {
     background-color: #111111;
 }
-.text-green-500{
-    color:#0BBD25
+.text-green-500 {
+    color: #0bbd25;
+}
+.bg-green-500 {
+    background: linear-gradient(90deg, #0a841c 0%, #0bbd25 50.22%, #0a841d 100%);
+}
+.decoration-green-500 {
+    text-decoration-color: #0bbd25;
+}
+.border-green-500{
+    border-color: #0bbd25;
+}
+.text-2xl {
+    font-size: 26px;
+}
+.text-gray-400 {
+    color: #f6f4f4;
+}
+.bg-linear {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(17, 17, 17, 1) 15%,
+        rgba(17, 17, 17, 1) 85%,
+        rgba(0, 0, 0, 1) 100%
+    );
+}
+.section {
+    display: none;
+}
+.active {
+    display: block;
+}
+.svg-active {
+    stroke: #0bbd25;
+}
+
+.svg-inactive {
+    stroke: #8b8b8b;
+}
+.bg-small {
+    background: url(../public/line3-sm.svg) no-repeat;
+    background-position: top -58px left 0px;
+}
+.mark {
+    color: #0bbd25;
+    background: transparent;
+}
+.h-card{
+    height: 750px;
+}
+
+@media (min-width: 1024px) {
+    .bg-lg {
+        background-image: url("../public/line4.svg"), url("../public/bg-index3.svg");
+        background-repeat: no-repeat;
+        background-position: top -100px left 77px, top 10px left 1050px;
+    }
+}
+@media (min-width: 1024px) {
+    .bg-about {
+        background: url("../public/bg-about-line1.svg"), url("../public/bg-about.png"),
+            url("../public/bg-about-line2.svg");
+        background-repeat: no-repeat;
+        background-position: top 3px left 874px, top 85px left 0px, top 4px left 208px;
+    }
+}
+@media (max-width: 1024px) {
+    .bg-about-small {
+        background: url("../public/bg-about-sm1.svg") no-repeat, url("../public/bg-about-sm2.svg") no-repeat;
+        background-position: top 100px left 95px, top 280px left 0px;
+    }
+}
+@media (max-width: 1024px) {
+    .bg-about-small2 {
+        height: 950px;
+       
+        margin-top: 36px;
+        background: url("../public/bg-about2-small.png") no-repeat, url("../public/bg-abaut2-small1.svg") no-repeat,
+            url("../public/Vector_Line_Small_3.svg") no-repeat;
+        background-position: top 90px left 0px, top 330px left 104px, bottom 0px left 0px;
+        background-size: auto, auto, auto;
+    }
 }
