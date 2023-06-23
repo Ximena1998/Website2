@@ -19,7 +19,7 @@ body {
 .decoration-green-500 {
     text-decoration-color: #0bbd25;
 }
-.border-green-500{
+.border-green-500 {
     border-color: #0bbd25;
 }
 .text-2xl {
@@ -58,8 +58,16 @@ body {
     color: #0bbd25;
     background: transparent;
 }
-.h-card{
+.h-card {
     height: 750px;
+}
+.start-cards {
+    .slick-slide {
+        opacity: 0.3;
+    }
+    .slick-current {
+        opacity: 1;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -86,11 +94,37 @@ body {
 @media (max-width: 1024px) {
     .bg-about-small2 {
         height: 950px;
-       
+
         margin-top: 36px;
         background: url("../public/bg-about2-small.png") no-repeat, url("../public/bg-abaut2-small1.svg") no-repeat,
             url("../public/Vector_Line_Small_3.svg") no-repeat;
         background-position: top 90px left 0px, top 330px left 104px, bottom 0px left 0px;
         background-size: auto, auto, auto;
+    }
+}
+@media (max-width: 1024px) {
+    .bg-pricing-small {
+        background: url("../public/pricing-bg-sm.svg") no-repeat;
+        background-position: top 200px left 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bg-start {
+        background: url("../public/bg-start2.svg") no-repeat, url("../public/bg-start1.svg") no-repeat,
+            url("../public/bg-start3.svg") no-repeat;
+        background-position: top 70px left 0px, top 70px right 0px, top 750px right 150px;
+    }
+}
+.-rotate-45 {
+    --tw-rotate: -20deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+        skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@media (max-width: 1024px) {
+    .bg-start-small {
+        background: url("../public/bg-start-small1.svg") no-repeat, url("../public/bg-start-small2.svg") no-repeat,
+            url("../public/bg-start-small3.svg") no-repeat;
+        background-position: top 100px left 0px, top 350px right 0px, top 670px left 0px;
     }
 }

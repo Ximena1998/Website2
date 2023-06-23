@@ -25,13 +25,13 @@ export function Footer() {
 							<FaLinkedin className="text-2xl " />
 							<FaInstagram className="text-2xl " />
 							<FaTwitter className="text-2xl " />
-							<FaWhatsapp className="text-2xl block md:hidden" />
+							<FaWhatsapp className="text-2xl " />
 						</div>
-						<div className='hidden md:block'>
+						<div className="hidden md:block">
 							<li className="text-white font-normal text-xs w-80">Terms and Conditions | Privacy Policy</li>
 							<li className="text-white font-normal text-xs pb-6 w-80">© All rights reserved 2021.</li>
 						</div>
-                        <div className='block md:hidden pb-7'>
+						<div className="block md:hidden pb-7">
 							<li className="text-gray-500 font-normal text-base">©2020Company</li>
 						</div>
 					</ul>

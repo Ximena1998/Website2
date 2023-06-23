@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import TickerTape from '../../components/TickerTape';
 export default function About() {
 	return (
@@ -48,21 +49,24 @@ export default function About() {
 							interaction. This is the most convenient and economical way to trade.
 						</p>
 					</div>
-					<div className='block md:hidden'>
-					<div className="w-72 mt-96 pt-24 mx-auto ps-20">
-						<p className="text-white text-base ">
-							Online trading is buying and selling stocks online. No human interaction. This is the most convenient and
-							economical way to trade.
-						</p>
+					<div className="block md:hidden">
+						<div className="w-72 mt-96 pt-24 mx-auto ps-20">
+							<p className="text-white text-base ">
+								Online trading is buying and selling stocks online. No human interaction. This is the most convenient
+								and economical way to trade.
+							</p>
+						</div>
 					</div>
-				</div>
 				</div>
 				{/** seccion 3*/}
 				<div className=" py-14 md:px-20 justify-end ms-auto md:py-24">
 					<h2 className="text-white font-bold text-center text-xl md:text-3xl">Make money work for you</h2>
 					<div className="justify-center flex">
 						<button className="bg-green-500 rounded-sm text-white text-center  w-48 md:w-52 h-10 mt-8">
-							Get Started
+							<Link href="https://webtrader.pentview.com/login" target="_blank">
+								{' '}
+								Get Started
+							</Link>
 						</button>
 					</div>
 				</div>

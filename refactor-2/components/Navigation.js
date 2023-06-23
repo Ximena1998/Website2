@@ -34,7 +34,6 @@ export function Navigation() {
 	function handleNav() {
 		setNavbar(!navbar);
 	}
-
 	return (
 		<div>
 			<nav className="w-full bg-black top-0 left-0 right-0 h-auto fixed z-10 md:relative">

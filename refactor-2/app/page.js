@@ -1,8 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import TickerTape from '../components/TickerTape';
-
 import Seccions from '../components/seccions';
-
 import { ArrowLgSvg, LineMain1Svg } from '../public/icons';
 export default function Home() {
 	const id = 'section1';
@@ -22,7 +21,10 @@ export default function Home() {
 						<li className="text-green-500  font-bold justify-center text-4xl flex md:text-6xl pb-6">LOW FEES</li>
 						<div className="justify-center flex">
 							<button className="bg-green-500 rounded-sm text-white text-center w-48 md:w-52 h-10 md:mt-8">
-								Get Started
+								<Link href="https://webtrader.pentview.com/login" target="_blank">
+									{' '}
+									Get Started
+								</Link>
 							</button>
 						</div>
 					</ul>
@@ -73,7 +75,10 @@ export default function Home() {
 							cost-effective way to trade.
 						</p>
 						<button className="bg-green-500 rounded-sm text-white text-center h-10 w-48  mt-5 md:w-52  md:mt-8">
-							Get Started
+							<Link href="https://webtrader.pentview.com/login" target="_blank">
+								{' '}
+								Get Started
+							</Link>
 						</button>
 					</div>
 				</div>
@@ -132,7 +137,10 @@ export default function Home() {
 							complete the deal in advance if you are satisfied with the result
 						</p>
 						<button className="bg-green-500 rounded-sm text-white text-center h-10 w-48  mt-5 md:w-52  md:mt-8">
-							Get Started
+							<Link href="https://webtrader.pentview.com/login" target="_blank">
+								{' '}
+								Get Started
+							</Link>
 						</button>
 					</div>
 				</div>
